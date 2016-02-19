@@ -1,0 +1,21 @@
+package Financeiro;
+
+public class Conta {
+
+	private double Saldo = 0;
+	private String Nome;
+	
+	public void deposita(double valor){
+		this.Saldo = this.Saldo + valor + (valor * 0.10);
+		
+	}
+	public double getvalor(){
+		return this.Saldo;
+	}
+	public void SetNome(String N){
+		this.Nome = N;
+	}
+	public String getNome(){
+		return this.Nome;
+	}
+}
