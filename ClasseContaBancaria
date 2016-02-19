@@ -1,0 +1,24 @@
+package Financeiro;
+
+public class ContaBancaria {
+
+	public static void main(String[] args) {
+	
+		Conta c1 = new Conta();
+		Conta c2 = new Conta();
+		
+		c1.SetNome("Fulano de tal");
+		c2.SetNome("Ciclano de tal");
+		
+		c1.deposita(2000.71);
+		c2.deposita(12870.46);
+		
+		System.out.println("\n\tFinanceiro de Agencia Bancária\n");
+		System.out.println("\nConta Um Nome: " + c1.getNome());
+		System.out.printf("Conta Um Saldo: " + "%.2f" , c1.getvalor());
+		System.out.println("\nConta Dois Nome: " + c2.getNome());
+		System.out.printf("Conta Dois Saldo: " + "%.2f" , c2.getvalor());
+
+	}
+
+}
